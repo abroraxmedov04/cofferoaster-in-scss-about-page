@@ -1,0 +1,84 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+@use "../utils/device-mixins" as media;
+
+
+.quality{
+    padding-top: 75px;
+    margin-bottom: 120px;
+
+    @include media.device-controller(976px) {
+        margin-bottom: 144px;
+    }
+
+    @include media.device-controller(976px) {
+        margin-bottom: 168px;
+    }
+
+    &__inner{
+        background-color: vars.$main-dark-grey-color;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2.3rem;
+        padding-bottom: 61px;
+        align-items: center;
+        border-radius: 10px;
+
+        @include media.device-controller(678px) {
+            padding-inline: 6rem;
+        }
+
+        @include media.device-controller(976px) {
+            flex-direction: row-reverse;
+            padding-bottom: 5px;
+            justify-content: space-between;
+        }
+    }
+
+    .quality-image{
+        transform: translateY(-50%);
+        width: 100%;
+
+        @include media.device-controller(651px) {
+            padding-inline: 5.8rem;
+            max-width: 573px;
+            width: 573px
+        }
+
+        @include media.device-controller(976px) {
+            transform: translateY(-15%);
+        }
+    }
+
+    &__content{
+        text-align: center;
+    }
+
+    &__title{
+        @include mixins.font-fraunces;
+        color: vars.$main-light-orange-color;
+        font-size: 2.8rem;
+        margin-bottom: 2.4rem;
+        line-height: 2.8rem;
+
+        @include media.device-controller(651px) {
+            font-size: 3.2rem;
+        }
+
+        @include media.device-controller(976px) {
+            text-align: start;
+        }
+    }
+
+    &__description{
+        color: vars.$main-light-orange-color;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        opacity: 60%;
+
+        @include media.device-controller(976px) {
+            text-align: start;
+            font-size: 1.8rem;
+        }
+    }
+}

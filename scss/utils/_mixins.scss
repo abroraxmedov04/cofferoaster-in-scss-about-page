@@ -1,0 +1,44 @@
+@mixin font-fraunces {
+  font-family: "Fraunces", "Arial", sans-serif;
+}
+
+@mixin font-barlow {
+  font-family: "Barlow", "Arial", sans-serif;
+}
+
+@mixin flex-box($flex-type, $direction, $content, $alignment, $gap) {
+  display: $flex-type;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $alignment;
+  gap: $gap;
+}
+
+@mixin image-resizer($max-w, $width) {
+  max-width: $max-w;
+  width: $width;
+}
+
+@mixin menu-btn($image-url) {
+  display: block;
+  width: 1.6rem;
+  height: 1.5rem;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: $image-url;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin image-bg-controller($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.7rem;
+}
+
+@mixin inline-block-padding($p-inline, $p-block) {
+  padding-inline: $p-inline;
+  padding-block: $p-block;
+}

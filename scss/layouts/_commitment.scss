@@ -1,0 +1,67 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+@use "../utils/device-mixins" as media;
+
+.commitment {
+    margin-top: 120px;
+    margin-bottom: 144px;
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .commitment-image {
+        width: 100%;
+    }
+
+    &__inner {
+        @include mixins.flex-box(flex, column, center, center, 4.8rem);
+
+        @include media.device-controller(689px) {
+            flex-direction: row;
+            gap: 69px;
+        }
+
+        @include media.device-controller(976px) {
+            flex-direction: row;
+            gap: 126px;
+        }
+    }
+
+    &__content {
+        text-align: center;
+
+        @include media.device-controller(689px) {
+            text-align: start;
+            max-width: 339px;
+            width: 100%;
+        }
+
+        @include media.device-controller(976px) {
+            text-align: start;
+            max-width: 540px;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        @include mixins.font-fraunces;
+        color: vars.$main-dark-grey-color;
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+
+
+        @include media.device-controller(976px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__description {
+        color: vars.$main-dark-grey-color;
+        font-size: 1.5rem;
+
+        @include media.device-controller(976px) {
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+@use "../utils/device-mixins" as media;
+
+.header {
+  position: relative;
+
+  @include media.device-controller(689px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+
+  &__inner {
+    @include mixins.flex-box(flex, row, space-between, center, null);
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+
+    @include media.device-controller(689px) {
+      padding-top: 4rem;
+      padding-bottom: 5.3rem;
+    }
+
+    @include media.device-controller(992px) {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+    }
+  }
+
+  &__logo {
+    @include mixins.image-resizer(163px, 100%);
+
+    @include media.device-controller(689px) {
+      @include mixins.image-resizer(236px, 236px);
+    }
+  }
+
+  &__menu-btn {
+    @include mixins.menu-btn(url("../../assets/images/open-icon-menu.png"));
+    
+    @include media.device-controller(689px) {
+      display: none;
+    }
+  }
+
+  &__nav-wr {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      0deg,
+      rgba(254, 252, 247, 0.504981) 0%,
+      #fefcf7 55.94%
+    );
+    display: none;
+
+    @include media.device-controller(689px) {
+      position: static;
+      display: block;
+    }
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 86.5vh;
+
+      @include media.device-controller(689px) {
+        height: 0;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+
+        @include media.device-controller(689px) {
+          flex-direction: row;
+        }
+      }
+
+      &__item {
+        list-style-type: none;
+      }
+
+      &__link {
+        font-size: 2.4rem;
+        color: vars.$main-dark-grey-color;
+        text-decoration-line: none;
+        @include mixins.font-fraunces;
+        line-height: 3.2rem;
+
+        @include media.device-controller(689px) {
+          @include mixins.font-barlow;
+          font-weight: 700;
+          color: vars.$main-grey-color;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          transition: ease-out 0.3s;
+
+          &:hover {
+            color: vars.$main-dark-grey-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: block;
+}
+
+.change-icon {
+  background-image: url("../../assets/images/close-icon-menu.png");
+}
+
+.unscroll {
+  overflow: hidden;
+}

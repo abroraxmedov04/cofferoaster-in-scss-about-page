@@ -1,0 +1,25 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: vars.$main-light-orange-color;
+  @include mixins.font-barlow;
+}

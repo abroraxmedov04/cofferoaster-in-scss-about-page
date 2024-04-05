@@ -1,0 +1,12 @@
+// - 320px — 576px: Mobile devices
+// - 576px — 768px: iPads, Tablets
+// - 768px — 1024px: Small screens, laptops
+// - 1024px — 1200px: Desktops, large screens
+// - 1200px and more — Extra large screens
+
+@mixin device-controller($min-width) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}
+
