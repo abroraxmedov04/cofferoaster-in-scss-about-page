@@ -764,8 +764,10 @@ body {
 
 .footer {
   margin-top: 120px;
+  margin-bottom: 30px;
 }
-.footer ul, .footer li {
+.footer ul,
+.footer li {
   list-style-type: none;
 }
 .footer__logo {

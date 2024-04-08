@@ -37,7 +37,7 @@
 
   &__menu-btn {
     @include mixins.menu-btn(url("../../assets/images/open-icon-menu.png"));
-    
+
     @include media.device-controller(689px) {
       display: none;
     }

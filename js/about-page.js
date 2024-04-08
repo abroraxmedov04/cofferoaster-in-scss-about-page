@@ -5,4 +5,3 @@ document.addEventListener("click", (e) => {
   document.body.classList.toggle("unscroll");
   navbar.classList.toggle("hide");
 });
-  

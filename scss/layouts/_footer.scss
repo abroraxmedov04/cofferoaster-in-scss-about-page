@@ -2,81 +2,81 @@
 @use "../utils/mixins" as mixins;
 @use "../utils/device-mixins" as media;
 
+.footer {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  ul,
+  li {
+    list-style-type: none;
+  }
 
-.footer{
-    margin-top: 120px;
-    ul, li{
-        list-style-type: none;
+  &__logo {
+    max-width: 217px;
+    width: 100%;
+  }
+
+  &__inner {
+    border-radius: 10px;
+    padding-block: 5.4rem;
+    padding-inline: 5.5rem;
+    background-color: vars.$main-dark-grey-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.8rem;
+
+    @include media.device-controller(976px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @include media.device-controller(679px) {
+      flex-direction: row;
+    }
+  }
+
+  .footer__link {
+    color: vars.$main-grey-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.4s;
+
+    &:hover {
+      color: vars.$main-orange-color;
+    }
+  }
+
+  .footer__icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .icon {
+    font-size: 2.4rem;
+    color: vars.$main-light-orange-color;
+    transition: 0.4s;
+
+    @include media.device-controller(679px) {
+      margin-top: 15px;
     }
 
-    &__logo{
-        max-width: 217px;
-        width: 100%;
+    @include media.device-controller(976px) {
+      margin-top: 0;
     }
 
-    &__inner{
-        border-radius: 10px;
-        padding-block: 5.4rem;
-        padding-inline: 5.5rem;
-        background-color: vars.$main-dark-grey-color;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 4.8rem;
-
-        @include media.device-controller(976px) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
+    &:hover {
+      color: vars.$main-orange-color;
     }
-
-    &__list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-
-        @include media.device-controller(679px) {
-            flex-direction: row;
-        }
-    }
-
-    .footer__link{
-        color: vars.$main-grey-color;
-        font-size: 12px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        transition: 0.4s;
-
-        &:hover{
-            color: vars.$main-orange-color;
-        }
-    }
-
-    .footer__icons{
-        display: flex;
-        gap: 24px;
-        align-items: center;
-    }
-
-    .icon{
-        font-size: 2.4rem;
-        color: vars.$main-light-orange-color;
-        transition: 0.4s;
-
-        @include media.device-controller(679px) {
-            margin-top: 15px;
-        }
-
-        @include media.device-controller(976px) {
-            margin-top: 0;
-        }
-
-        &:hover{
-            color: vars.$main-orange-color;
-        }
-    }
+  }
 }
