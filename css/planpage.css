@@ -479,4 +479,328 @@ body {
 
 .unscroll {
   overflow: hidden;
+}
+
+.hero .container {
+  padding: 0 20px;
+}
+.hero__inner {
+  background-image: url("../../assets/images/creste-yuorplanmobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.7rem;
+  padding-inline: 2.4rem;
+  padding-block: 8.7rem;
+}
+@media only screen and (min-width: 689px) {
+  .hero__inner {
+    background-image: url("../../assets/images/create-yuorplane-tablet.jpg");
+    padding-inline: 5.8rem;
+    padding-block: 11.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__inner {
+    background-image: url("../../assets/images/create-your-plan-desktop.png");
+    padding-inline: 8.5rem;
+    padding-block: 13.7rem;
+  }
+}
+.hero__content {
+  text-align: center;
+}
+@media only screen and (min-width: 689px) {
+  .hero__content {
+    text-align: start;
+    max-width: 398px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__content {
+    text-align: start;
+    max-width: 442px;
+    width: 100%;
+  }
+}
+.hero__content-title {
+  font-family: "Fraunces", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 2.8rem;
+  color: #fefcf7;
+  line-height: 2.8rem;
+}
+@media only screen and (min-width: 689px) {
+  .hero__content-title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero__content-title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+}
+.hero__content-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #fefcf7;
+  opacity: 60%;
+}
+
+.howitworks {
+  margin-top: 120px;
+  position: relative;
+}
+
+.howitworks__inner {
+  padding-block: 80px;
+  padding-inline: 24px;
+  background-color: #333d4b;
+  border-radius: 1rem;
+}
+
+.howitworks__title {
+  font-family: "Fraunces", "Arial", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #83888f;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.howitworks__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.howitworks__cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+
+.howitworks__card-number {
+  color: #fdd6ba;
+  font-family: "Fraunces", "Arial", sans-serif;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.howitworks__card-title {
+  font-family: "Fraunces", "Arial", sans-serif;
+  margin-bottom: 2.4rem;
+  color: #fefcf7;
+  font-size: 2.8rem;
+}
+
+.howitworks__card-desc {
+  color: #fefcf7;
+  font-size: 1.8rem;
+  opacity: 70%;
+}
+
+.howitworks__btn {
+  margin-top: 7.9rem;
+  display: block;
+  margin-inline: auto;
+  border: none;
+  width: 217px;
+  padding: 15px 0;
+  border-radius: 10px;
+  background-color: #0e8784;
+  font-family: "Fraunces", "Arial", sans-serif;
+  color: #fefcf7;
+  font-size: 1.8rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.howitworks__btn:hover {
+  background-color: #66d2cf;
+}
+
+.howitworks__steps-line {
+  display: block;
+  max-width: 467px;
+  width: 100%;
+  height: 3px;
+  margin-left: 1.6rem;
+  background-color: #fdd6ba;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.howitworks__steps {
+  position: relative;
+  max-width: 467px;
+  width: 100%;
+  padding-bottom: 40px;
+  display: none;
+}
+
+.howitworks__steps::before {
+  content: "";
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #fefcf7;
+  z-index: 10;
+  border-radius: 50%;
+  top: -1.5rem;
+  left: 0;
+  border: 2px solid #0e8784;
+}
+
+.howitworks__steps::after {
+  content: "";
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #fefcf7;
+  z-index: 10;
+  border-radius: 50%;
+  border: 2px solid #0e8784;
+  top: -1.5rem;
+  right: -3rem;
+}
+
+.howitworks__steps-block {
+  width: 35px;
+  height: 35px;
+  color: #fefcf7;
+  border: 2px solid #0e8784;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: 50%;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 567px) {
+  .howitworks {
+    position: relative;
+  }
+  .howitworks__inner {
+    padding-block: 90px;
+    padding-inline: 40px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .howitworks__steps {
+    display: block;
+  }
+  .howitworks__inner {
+    padding-block: 90px;
+    padding-inline: 70px;
+  }
+  .howitworks {
+    margin-top: 200px;
+    position: relative;
+  }
+  .howitworks__title {
+    font-family: "Fraunces", "Arial", sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #83888f;
+    text-align: start;
+    margin-bottom: 8rem;
+  }
+  .howitworks__cards-wrapper {
+    flex-direction: row;
+  }
+  .howitworks__card {
+    width: 300px;
+    text-align: start;
+  }
+  .howitworks__card-number {
+    margin-bottom: 4.8rem;
+  }
+  .howitworks__card-title {
+    font-size: 3.8rem;
+  }
+  .howitworks__btn {
+    margin-inline: 0;
+  }
+  .howitworks__btn:hover {
+    background-color: #66d2cf;
+  }
+}
+.footer {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.footer ul,
+.footer li {
+  list-style-type: none;
+}
+.footer__logo {
+  max-width: 217px;
+  width: 100%;
+}
+.footer__inner {
+  border-radius: 10px;
+  padding-block: 5.4rem;
+  padding-inline: 5.5rem;
+  background-color: #333d4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+@media only screen and (min-width: 976px) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+@media only screen and (min-width: 679px) {
+  .footer__list {
+    flex-direction: row;
+  }
+}
+.footer .footer__link {
+  color: #83888f;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.footer .footer__link:hover {
+  color: #fdd6ba;
+}
+.footer .footer__icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.footer .icon {
+  font-size: 2.4rem;
+  color: #fefcf7;
+  transition: 0.4s;
+}
+@media only screen and (min-width: 679px) {
+  .footer .icon {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 976px) {
+  .footer .icon {
+    margin-top: 0;
+  }
+}
+.footer .icon:hover {
+  color: #fdd6ba;
 }/*# sourceMappingURL=planpage.css.map */
