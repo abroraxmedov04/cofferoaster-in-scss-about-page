@@ -107,7 +107,320 @@
         </div>
       </section>
 
-      
+      <!-- inputfield start -->
+
+      <section class="inputfield">
+        <div class="container">
+          <div class="inputfield__inner">
+            <div class="inputfield__wrapper">
+              <form class="inputfield__form" id="coffeeForm">
+                <div class="inputfield__block">
+                  <div class="inputfield__block-header">
+                    <span class="inputfield__question"
+                      >How do you drink your coffee?</span
+                    >
+                    <button class="inputfield__btn-toggler"></button>
+                  </div>
+
+                  <div class="toggler">
+                    <div class="inputfield__block-body">
+                      <!-- First Option -->
+                      <div class="inputfield__option">
+                        <label for="brewOption1">Capsule</label>
+                        <input
+                          type="radio"
+                          id="brewOption1"
+                          name="brew"
+                          value="Capsule"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Compatible with Nespresso systems and similar brewers
+                        </span>
+                      </div>
+
+                      <!-- Second Option -->
+                      <div class="inputfield__option">
+                        <label for="brewOption2">Filter</label>
+                        <input
+                          type="radio"
+                          id="brewOption2"
+                          name="brew"
+                          value="Filter"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          For pour over or drip methods like Aeropress, Chemex,
+                          and V60
+                        </span>
+                      </div>
+
+                      <!-- Third Option -->
+                      <div class="inputfield__option">
+                        <label for="brewOption3">Espresso</label>
+                        <input
+                          type="radio"
+                          id="brewOption3"
+                          name="brew"
+                          value="Espresso"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Dense and finely ground beans for an intense,
+                          flavorful experience
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inputfield__block">
+                  <div class="inputfield__block-header">
+                    <span class="inputfield__question"
+                      >What type of coffee?</span
+                    >
+                    <button class="inputfield__btn-toggler"></button>
+                  </div>
+
+                  <div class="toggler">
+                    <div class="inputfield__block-body">
+                      <!-- First Option -->
+                      <div class="inputfield__option">
+                        <label for="typeOption1">Single Origin</label>
+                        <input
+                          type="radio"
+                          id="typeOption1"
+                          name="type"
+                          value="Single Origin"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Distinct, high quality coffee from a specific
+                          family-owned farm
+                        </span>
+                      </div>
+
+                      <!-- Second Option -->
+                      <div class="inputfield__option">
+                        <label for="typeOption2">Decaf</label>
+                        <input
+                          type="radio"
+                          id="typeOption2"
+                          name="type"
+                          value="Decaf"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Just like regular coffee, except the caffeine has been
+                          removed
+                        </span>
+                      </div>
+
+                      <!-- Third Option -->
+                      <div class="inputfield__option">
+                        <label for="typeOption3">Blended</label>
+                        <input
+                          type="radio"
+                          id="typeOption3"
+                          name="type"
+                          value="Blended"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Combination of two or three dark roasted beans of
+                          organic coffees
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inputfield__block">
+                  <div class="inputfield__block-header">
+                    <span class="inputfield__question"
+                      >How much would you like?</span
+                    >
+                    <button class="inputfield__btn-toggler"></button>
+                  </div>
+
+                  <div class="toggler">
+                    <div class="inputfield__block-body">
+                      <!-- First Option -->
+                      <div class="inputfield__option">
+                        <label for="amountOption1">250g</label>
+                        <input
+                          type="radio"
+                          id="amountOption1"
+                          name="amount"
+                          value="250g"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Perfect for the solo drinker. Yields about 12
+                          delicious cups.
+                        </span>
+                      </div>
+
+                      <!-- Second Option -->
+                      <div class="inputfield__option">
+                        <label for="amountOption2">500g</label>
+                        <input
+                          type="radio"
+                          id="amountOption2"
+                          name="amount"
+                          value="500g"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Perfect option for a couple. Yields about 40
+                          delectable cups.
+                        </span>
+                      </div>
+
+                      <!-- Third Option -->
+                      <div class="inputfield__option">
+                        <label for="amountOption3">1000g</label>
+                        <input
+                          type="radio"
+                          id="amountOption3"
+                          name="amount"
+                          value="1000g"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Perfect for offices and events. Yields about 90
+                          delightful cups.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inputfield__block">
+                  <div class="inputfield__block-header">
+                    <span class="inputfield__question"
+                      >Want us to grind them?</span
+                    >
+                    <button class="inputfield__btn-toggler"></button>
+                  </div>
+
+                  <div class="toggler">
+                    <div class="inputfield__block-body">
+                      <!-- First Option -->
+                      <div class="inputfield__option">
+                        <label for="grindOption1">Wholebean</label>
+                        <input
+                          type="radio"
+                          id="grindOption1"
+                          name="grind"
+                          value="Wholebean"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Best choice if you cherish the full sensory experience
+                        </span>
+                      </div>
+
+                      <!-- Second Option -->
+                      <div class="inputfield__option">
+                        <label for="grindOption2">Filter</label>
+                        <input
+                          type="radio"
+                          id="grindOption2"
+                          name="grind"
+                          value="Filter"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          For drip or pour-over coffee methods such as V60 or
+                          Aeropress
+                        </span>
+                      </div>
+
+                      <!-- Third Option -->
+                      <div class="inputfield__option">
+                        <label for="grindOption3">Cafetiére</label>
+                        <input
+                          type="radio"
+                          id="grindOption3"
+                          name="grind"
+                          value="Cafetiére"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          Coarse ground beans specially suited for french press
+                          coffee
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inputfield__block">
+                  <div class="inputfield__block-header">
+                    <span class="inputfield__question"
+                      >How often should we deliver?</span
+                    >
+                    <button class="inputfield__btn-toggler"></button>
+                  </div>
+
+                  <div class="toggler">
+                    <div class="inputfield__block-body">
+                      <!-- First Option -->
+                      <div class="inputfield__option">
+                        <label for="deliveryOption1">Every week</label>
+                        <input
+                          type="radio"
+                          id="deliveryOption1"
+                          name="delivery"
+                          value="Every week"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          $7.20 per shipment. Includes free first-class
+                          shipping.
+                        </span>
+                      </div>
+
+                      <!-- Second Option -->
+                      <div class="inputfield__option">
+                        <label for="deliveryOption2">Every 2 weeks</label>
+                        <input
+                          type="radio"
+                          id="deliveryOption2"
+                          name="delivery"
+                          value="Every 2 weeks"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          $9.60 per shipment. Includes free priority shipping.
+                        </span>
+                      </div>
+
+                      <!-- Third Option -->
+                      <div class="inputfield__option">
+                        <label for="deliveryOption3">Every month</label>
+                        <input
+                          type="radio"
+                          id="deliveryOption3"
+                          name="delivery"
+                          value="oEvery month"
+                          class="input__radius"
+                        />
+                        <span class="inputfield__description">
+                          $12.00 per shipment. Includes free priority shipping.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- inputfield end -->
     </main>
 
     <footer class="footer">
